@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul CSS - Panduan Interaktif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-brand {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00d4ff !important;
+        }
+        .nav-link {
+            font-size: 1.2rem;
+            color: #fff !important;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background: #00d4ff;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #008cba;
+            transform: scale(1.05);
+        }
+        .content-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .content-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            font-size: 1.1rem;
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section ul li {
+            font-size: 1.1rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .content-section ul li:hover {
+            transform: translateX(10px);
+            background: rgba(0, 0, 0, 0.4);
+        }
+        pre {
+            background: #1e1e2f;
+            color: #c3e88d;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index2.html">Panduan Interaktif</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index2.html">Halaman Utama</a></li>
+                <li class="nav-item"><a class="nav-link" href="materimodul.html">Materi</a></li>
+                <li class="nav-item"><a class="nav-link" href="progress.html">Progress</Progress></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Modul CSS</h1>
+        <p>Tingkatkan estetika website Anda dengan CSS! Mulai belajar sekarang.</p>
+        <a href="#content" class="btn btn-primary">Pelajari Sekarang</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container content-section" id="content">
+        <h2>Apa Itu CSS?</h2>
+        <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk memperindah tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, tata letak, dan elemen visual lainnya.</p>
+
+        <h2>Materi Dasar CSS</h2>
+        <ul>
+            <li><strong>Selektor CSS:</strong> <code>id</code>, <code>class</code>, dan tag</li>
+            <li><strong>Properti CSS:</strong> <code>color</code>, <code>font-size</code>, <code>background</code></li>
+            <li><strong>Box Model:</strong> Margin, Border, Padding, dan Content</li>
+            <li><strong>Flexbox:</strong> Membuat layout yang fleksibel</li>
+            <li><strong>Grid CSS:</strong> Tata letak berbasis grid</li>
+        </ul>
+
+        <h2>Contoh Kode CSS</h2>
+        <pre>
+/* Mengatur latar belakang dan warna teks */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Mengatur ukuran dan posisi teks */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+        </pre>
+
+        <h2>Tugas Anda</h2>
+        <p>Buat sebuah halaman sederhana dengan HTML dan tambahkan CSS untuk mendesain tampilannya. Gunakan <code>Flexbox</code> atau <code>Grid</code> untuk tata letaknya!</p>
+        <a href="quizcss.html" class="btn btn-primary">Lanjutkan ke Quiz</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Panduan Interaktif. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
